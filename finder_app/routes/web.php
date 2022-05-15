@@ -27,4 +27,4 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('/matches',[MatchController::class,'index'])->name('matches.index');
 });
 
-Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logout'])->middleware('auth')->name('logout');
+Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->middleware('auth')->name('logout');
