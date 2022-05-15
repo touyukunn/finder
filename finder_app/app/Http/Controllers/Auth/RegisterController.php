@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Storage;
+use \InterventionImage;
+use Intervention\Image\Facades\Image;
+
 
 class RegisterController extends Controller
 {
@@ -92,11 +95,21 @@ class RegisterController extends Controller
         //画像アップロード追加
         // dd($request->all());
         $fileName=$request->file('image')->getClientOriginalName();
-        Storage::putFileAs('public/images', $request->file('image'), $fileName);
-        $fullFilePath = '/storage/images/'. $fileName;
-
+        $files=$request->file('image');
+        
+        $image= \Image::make($files);
+        // dd($image);
+        $image->resize(400,400,
+        function($constraint){
+            $constraint->upsize();
+        });
         $data = $request->all();
-
+        $image->save($files,80,'jpg');
+        // dd($fileName);
+        
+        Storage::putFileAs('public/images',$files, $fileName);
+        $fullFilePath = '/storage/images/'. $fileName;
+        
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

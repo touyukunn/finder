@@ -38,15 +38,15 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function logout(Request $request)
-   {
-       Auth::logout();
+//     public function logout(Request $request)
+//    {
+//        Auth::logout();
 
-       $request->session()->invalidate();
+//        $request->session()->invalidate();
 
-       $request->session()->regenerate();
+//        $request->session()->regenerate();
 
-       return redirect(RouteServiceProvaider::HOME);
-   }
+//        return redirect(RouteServiceProvaider::HOME);
+//    }
 
 }

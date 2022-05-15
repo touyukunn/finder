@@ -28,25 +28,26 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-auto">
-                        
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-                                @guest
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                        @auth
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link" href="{{ route('logout') }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
+                            @endauth
                         </ul>
 
                         <ul class="navbar-nav mx-auto">
@@ -79,6 +80,8 @@
                                             <i class="fa fa-comments" aria-hidden="true"></i>
                                         </a>
                                     </li>
+
+                            
                             @endguest
                         </ul>
                     </div>
@@ -87,7 +90,7 @@
         </div>
 
         @if (session('flash_message'))
-            <div class="flash_message bg-success text-center py-3 my-0">
+            <div class="flash_message bg-success text-center py-4 my-0">
                 {{ session('flash_message') }}
             </div>
         @endif
