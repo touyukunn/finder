@@ -28,3 +28,6 @@ Route::group(['middleware'=>'auth'],function(){
 });
 
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->middleware('auth')->name('logout');
+
+
+Route::get('/ho', [App\Http\Controllers\HomeController::class, 'ho'])->name('ho');

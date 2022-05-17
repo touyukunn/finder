@@ -4,7 +4,7 @@
 <div class="p-user-index">
 
 @if(is_null($user))
-  <p class="text-center">あなたの周りにユーザいません</p>
+  <p class="text-center">より多くの人とつながろうLet`s share This</p>
  
 @endif
 
