@@ -96,10 +96,10 @@ class RegisterController extends Controller
         // dd($request->all());
         $fileName=$request->file('image')->getClientOriginalName();
         $files=$request->file('image');
-        
+        //resize
         $image= \Image::make($files);
         // dd($image);
-        $image->resize(400,400,
+        $image->resize(1920,640,
         function($constraint){
             $constraint->upsize();
         });
