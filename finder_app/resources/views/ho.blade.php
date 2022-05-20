@@ -54,7 +54,7 @@
   <p class="lead">This is an application to find hobby friends, We will provide such a place.Enjoy what you like with people you like</p>
   <hr class="my-4">
   <p>You need an Instagram account To use this app.</p>
-  <a class="btn btn-primary btn-lg" href="/" role="button">Start FINDER</a>
+  <a class="btn btn-primary btn-lg" href="/home" role="button">Start FINDER</a>
 </div>
 
 <br>
@@ -88,7 +88,7 @@
   <p class="text-center text-success">そんな好きなことに熱中している人同士をつなげてたい</p>
   <p class="text-center text-success">そんな想いからこのアプリは生まれました</p>
   <p class="text-center text-success">さあ、あなたの好きを教えてください</p>
-  <p class="text-center text-warning">★こちらのアプリはインスタグラムのアカウント名を名前にご登録いただき、趣味が同じ人同士がこのFINDERで出会い、インスタグラムで交流を広げてもらうことがメインです★</p>
+  <p class="text-center text-warning">★こちらのアプリはインスタグラムのアカウント名を名前にご登録いただき、趣味が同じ人同士がこのFINDERで出会い、インスタグラムで交流を広げてもらうことが目的です★</p>
  
 
 
@@ -96,27 +96,27 @@
  
 
   </div>
-  <div class = "footer row col-12 mt-2 pb-3 justify-content-center" style = "background-color:rgb(69,75,86);">
-    <div class ="center-footer co-sm-6 p-3 m-1" style = "color:white;">
-        <ol class = "service" style = "font-size: 25px;"><a href="#" class = "" style = "color:white">使用技術</a></ol>
-        <li class = "company_text"><a href="http://touyukun.php.xdomain.jp/board/"  style = "color:white">道路掲示板</li></a>
-        <li class = "company_text"><a href="http://touyukun.php.xdomain.jp/todo/ " style = "color:white">Todoリスト</li>        
-        <li class = "company_text"><a href="http://touyukun.php.xdomain.jp/tetoris/"  style = "color:white">テトリス</li>    
-        <li class = "company_text"><a href="/"  style = "color:white">FINDER<</li>
-        <li class = "company_text"><a href="https://github.com/touyukunn"  style = "color:white">Github</li>
+  <div class = "footer row col-12 mt-3 pb-4 justify-content-center" style = "background-color:rgb(69,75,86);">
+    <div class = "left-footer col-sm-3 p-2 m-1" style = "color:white;">
+      <ol class = "company justify-content-right" style = "font-size: 25px;"><a href="#" class = "" style = "color:red">My portFolio</a></ol>
+        <li class = "company_text"><a href="http://touyukun.php.xdomain.jp/board/"  style = "color:white">道路掲示板</a></li>
+        <li class = "company_text"><a href="http://touyukun.php.xdomain.jp/todo/ " style = "color:white">Todoリスト</a></li>        
+        <li class = "company_text"><a href="http://touyukun.php.xdomain.jp/tetoris/"  style = "color:white">テトリス</a></li>    
+        <li class = "company_text"><a href="/home"  style = "color:white">FINDER</a></li>
+        <li class = "company_text"><a href="https://github.com/touyukunn"  style = "color:white">GitHub</a></li>
     </div>
-    <div class = "left-footer col-sm-3 p-3 m-1" style = "color:white;">
-      <ol class = "service" style = "font-size: 25px;"><a href="#" class = "" style = "color:white">使用技術</a></ol>
-      <li class = "work_text">JavaScript</li>
-      <li class = "work_text">PHP</li>
-      <li class = "work_text">Laravel</li>
-      <li class = "work_text">HTML&CSS</li>
-  </div>
-  <div class = "right-footer col-sm-1 p-3 m-1" style = "color:white;">
-      <ol class = "service" style = "font-size: 25px;"><a href="#" class = "" style = "color:white">環境</a></ol>
+    <div class = "center-footer col-sm-3 p-2 m-1" style = "color:white;">
+      <ol class = "work justify-content-left" style = "font-size: 25px;"><a href="#" class = "" style = "color:red">使用技術</a></ol>
+        <li class = "work_text">PHP</li>
+        <li class = "work_text">Laravel</li>        
+        <li class = "work_text">HTML&CSS</li>     
+    </div>
+    <div class = "right-footer col-sm-3 p-2 m-1" style = "color:white;">
+      <ol class = "service" style = "font-size: 25px;"><a href="#" class = "" style = "color:red">環境</a></ol>
         <li>AWS</li>
         <li>Heroku</li>
         <li>Xserver</li>
+        
   </div>
   </div>
 </div>
