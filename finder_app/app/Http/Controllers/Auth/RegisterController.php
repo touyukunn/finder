@@ -99,7 +99,7 @@ class RegisterController extends Controller
         //resize
         $image= \Image::make($files);
         // dd($image);
-        $image->resize(1920,640,
+        $image->resize(400,400,
         function($constraint){
             $constraint->upsize();
         });
