@@ -109,7 +109,8 @@
       <ol class = "work justify-content-left" style = "font-size: 25px;"><a href="#" class = "" style = "color:red">使用技術</a></ol>
         <li class = "work_text">PHP</li>
         <li class = "work_text">Laravel</li>        
-        <li class = "work_text">HTML&CSS</li>     
+        <li class = "work_text">HTML&CSS</li> 
+        <li class = "work_text">JavaScript</li>    
     </div>
     <div class = "right-footer col-sm-3 p-2 m-1" style = "color:white;">
       <ol class = "service" style = "font-size: 25px;"><a href="#" class = "" style = "color:red">環境</a></ol>
