@@ -11,7 +11,7 @@
 @if(!is_null($user))
 
 <div class="tphoto">
-    <img src="{{$user->img_url }}" title="tphoto" alt="Tinder Photo" />
+    <img src="{{$user->img_url }}" title="tphoto" alt="finder Photo" />
     <div class="tname">{{$user->name}}</div>
   </div>
     <div class="tcontrols">
