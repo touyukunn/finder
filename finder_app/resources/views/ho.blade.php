@@ -88,7 +88,7 @@
   <p class="text-center text-success">そんな好きなことに熱中している人同士をつなげてたい</p>
   <p class="text-center text-success">そんな想いからこのアプリは生まれました</p>
   <p class="text-center text-success">さあ、あなたの好きを教えてください</p>
-  <p class="text-center text-warning">★こちらのアプリはインスタグラムのアカウント名を名前にご登録いただき、趣味が同じ人同士がこのFINDERで出会い、インスタグラムで交流を広げてもらうことが目的です★</p>
+  <p class="text-center text-warning">★こちらのアプリはインスタグラムのアカウント名を名前にご登録いただき、趣味が同じ人同士がこのFINDERで出会い、インスタグラムで交流を広げてもらうことが目的です★~</p>
  
 
 
