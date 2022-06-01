@@ -15,7 +15,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 
 
- 
+ //マッチ処理の動作テスト
 class TestMatchControllerTest extends TestCase
 {
     /**
@@ -24,11 +24,11 @@ class TestMatchControllerTest extends TestCase
      * @return void
      */
     public function test_index()
-    {  
+    {   //仮想ユーザ作成
         $user = User::factory()->create();
         
         $response = $this->actingAs($user)->withSession(['banned' => false])->get(route('matches.index',' '));
-
+        //正常終了200
         $response->assertStatus(200);
     }
 }
