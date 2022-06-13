@@ -3,7 +3,7 @@
 
 
 <h2>使用技術</h2>
-・PHP　
+・PHP　8.1.2
 ・Laravel　9.11.0
 ・bootstrap
 ・phpunit 9.5.20
